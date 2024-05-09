@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 30;
+	padding: 30; 
+}
+
+body {
+  background-color: rgb(233, 231, 207);
+  background-image: url("../background/image.jpg");
+}
+
+.search {
+  display: flex;
+  margin: 0 auto;
+  max-width: 400px;
+  justify-content: center;
+}
+
+#inputItem {
+  height: 40px;
+  width: 80%;
+  border: 2px solid #000000;
+  border-radius: 6px;
+}
+
+#searchButton {
+  width: 20%;
+  height: 40px;
+  border: 2px solid #000000;
+  margin-left: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 6px;
+  background-color: #ffdde6;
+}
+
+#searchButton:hover {
+  background-color: #ff6b9c;
+  color: white;
+  border: 2px solid black;
+}
+
+#searchResult {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+#daftarHasil {
+  max-width: 200px;
+  border: 2px solid #000000;
+  margin: 20px 3px;
+  border-radius: 7px;
+  background-color: #ffdde6;
+}
+
+#daftarHasil > img {
+  padding-top: 8px;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+
+#daftarHasil > .detailHasil {
+  padding: 10px;
+}
+
+#daftarHasil > .detailHasil > h3 {
+  text-align: center;
+  margin: 6px;
+}
+
+#daftarHasil > .detailHasil > p {
+  margin: 5px;
+}
+
+.tombol {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  border: 2px solid #ff6b9c;
+  margin-bottom: 0;
+}
+
+.tombol > button {
+  color: #ff3385;
+  align-items: flex-end;
+}
+
+.error {
+  display: block;
+  margin: auto;
+  text-align: center;
+  line-height: 20px;
+}
+
+.error > h2 {
+  color: red;
+}
+
+.error > p {
+  line-height: 0px;
+}
+
+@media screen and (max-width: 470px) {
+  #searchButton {
+    width: 25%;
+  }
+}
